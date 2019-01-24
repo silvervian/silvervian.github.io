@@ -1,0 +1,27 @@
+// $breakpoint arguement choices:
+// - small
+// - medium
+// - large
+// - wide
+// - mega
+
+// ORDER: utilities > base  >  layout > page > components
+
+// 1em = 16px
+@mixin media($point) {
+  @if $point == small {
+    @media only screen and (max-width: 36em) { @content };    //576px
+  }
+  @if $point == medium {
+    @media only screen and (max-width: 48em) { @content };    //768px
+  }
+  @if $point == large {
+    @media only screen and (max-width: 62em) { @content };    //992px
+  }
+  @if $point == wide {
+    @media only screen and (max-width: 75em) { @content };    //1200px
+  }
+  @if $point == mega {
+    @media only screen and (min-width: 112.5em) { @content }; //1800px
+  }
+}

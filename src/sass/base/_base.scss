@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  
+  // Antysmoothing when transition
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+}
+
+a {
+  &:link, 
+  &:visited, 
+  &:hover, 
+  &:active, 
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+html {
+  font-size: 62.5%;         
+  
+  // making as template for media query
+  @include media(wide) {    
+    font-size: 62.5%;      
+  }
+  @include media(large) {   
+    font-size: 62.5%;      
+  }
+  @include media(medium) {  
+    font-size: 62.5%;        
+  }
+  @include media(small) {  
+    font-size: 62.5%;         
+  }
+  @include media(mega) {
+    font-size: 80%;         
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
