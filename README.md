@@ -1,3 +1,3 @@
-# Gulp-Config
+# Here will be portfolio... soon :D
 
-Simple gulp configuration with browsersync and webpack
+But now is only list of some projects

@@ -1,0 +1,68 @@
+body {
+  background: #3a6186;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.3rem;
+  align-items: center;
+  justify-content: center;
+  
+  &__list {
+    color: rgba(255, 255, 0,.7);
+    list-style-type: decimal;
+  }
+  
+  &__code {
+    list-style: none;
+    background: rgba(0,0,0,.1);
+    border-radius: 5px;
+  }
+  
+  &__item {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  &__link {
+    position: relative;
+    color: rgba(255, 255, 255,.7);
+    border-bottom: 1px solid transparent;
+    transition: .2s;
+
+    &:hover, &::before {
+      color: shade(rgba(255, 255, 0,.7), 10%);
+    }
+
+    &::before {
+      visibility: hidden;
+      position: absolute;
+      content: '\f35a';
+      font-family: "Font Awesome 5 Free";
+      // top: 6px;
+      left: -6rem;
+      width: 2rem;
+      height: 2rem;
+      // background: url(../../img/arrow.png) no-repeat 50% 50%;
+    }
+    
+    &:hover::before {
+      visibility: visible;
+    }
+  }
+}
+
+.strong {
+  font-weight: bold;
+}

@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
 body {
-  font-family: sans-serif;
+  font-family: $font-primary;
   line-height: 1.7;
   font-weight: 400;
   color: rgb(0, 0, 0);
+}
+
+.primary {
+  margin: 1rem; 
+  font-size: 3.3rem;
+  color: rgba(255, 255, 255,.7);
+
 }
