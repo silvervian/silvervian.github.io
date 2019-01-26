@@ -36,6 +36,7 @@ background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, F
   }
   
   &__link {
+    padding: 0 1.5rem;
     position: relative;
     color: rgba(255, 255, 255,.7);
     border-bottom: 1px solid transparent;
